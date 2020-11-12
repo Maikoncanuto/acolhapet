@@ -1,0 +1,256 @@
+//.container{
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: space-around;
+//  align-items: center;
+//  height: 100%;
+//  width: 100%;
+//  background: #ffffff;
+//}
+//
+//.header {
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//
+//  h1 {
+//    font-weight: bold;
+//    color: #30bc57;
+//    font-size: 40px;
+//    flex-direction: column;
+//    justify-content: center;
+//    align-items: center;
+//    font-style: normal;
+//
+//    .title {
+//      font-style: normal;
+//      font-size: 26px;
+//      font-weight: lighter;
+//      color: #383a3e;
+//    }
+//  }
+//}
+//
+//.login {
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: space-evenly;
+//  align-items: center;
+//}
+//
+//.register {
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  justify-content: space-around;
+//  font-weight: normal;
+//  color: #383a3e;
+//  font-size: 15px;
+//
+//  p {
+//    color: #383a3e;
+//    font-weight: lighter;
+//
+//    span {
+//      color: #383a3e;
+//      font-weight: bold;
+//    }
+//  }
+//
+//  .email {
+//    font-size: 14px;
+//    flex-direction: row;
+//    align-items: center;
+//    display: flex;
+//
+//    ion-icon {
+//      margin-right: 5px;
+//    }
+//  }
+//}
+//
+//.btn-google {
+//  --background: #d04333;
+//  --border-radius: 0;
+//  height: 50px;
+//  width: 270px;
+//  margin-bottom: 5px;
+//  --box-shadow: none;
+//  --font-weight: normal;
+//
+//}
+//
+//.btn-facebook {
+//  --background: #3c66c5;
+//  --border-radius: 0;
+//  height: 50px;
+//  width: 270px;
+//  --box-shadow: none;
+//  --font-weight: normal;
+//  margin-bottom: 5px;
+//}
+
+$color-primary: #de4153;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+
+  .header {
+    width: 100%;
+    display: flex;
+    margin-top: 5vh;
+    margin-right: 5vh;
+    margin-bottom: 2vh;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    h1 {
+      font-weight: normal;
+      font-size: 20px;
+
+      span {
+        color: $color-primary;
+        font-weight: bold;
+        font-size: 28px;
+      }
+    }
+
+    img {
+      margin-left: 1vh;
+    }
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .label {
+      margin-left: 5vh;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: flex-start;
+      align-items: center;
+
+      .login {
+        width: 20%;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .signup {
+        margin-left: 2vh;
+        width: 30%;
+        font-size: 16px;
+        font-weight: 400;
+        color: #6e6e6e;
+      }
+    }
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .input-email {
+      margin: 4vh 4vh 2vh;
+
+      .label-email {
+        color: #383a3e;
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
+
+    .input-password {
+      margin: 2vh 4vh;
+    }
+
+    .container-logar {
+      margin-top: 3vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .esqueceu-senha {
+        color: #383a3e;
+        font-weight: normal;
+        font-size: 13px;
+      }
+
+      .btn-entrar {
+        color: $color-primary;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .social {
+    margin-top: 9vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14px;
+    font-weight: normal;
+
+    h1 {
+      .title {
+        font-size: 18px;
+        font-weight: normal;
+        color: #383a3e;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+      }
+    }
+
+    .actions {
+      margin-top: 3vh;
+
+      .facebook {
+        --background: white;
+        color: #365fba;
+        --border-radius: 0;
+        height: 50px;
+        width: 50px;
+        --box-shadow: none;
+        --font-weight: normal;
+      }
+
+      .google {
+        --background: white;
+        color: #c84233;
+        --border-radius: 0;
+        height: 50px;
+        width: 50px;
+        --box-shadow: none;
+        --font-weight: normal;
+      }
+
+      .twitter {
+        --background: white;
+        color: #0099d4;
+        --border-radius: 0;
+        height: 50px;
+        width: 50px;
+        --box-shadow: none;
+        --font-weight: normal;
+      }
+    }
+  }
+}
+

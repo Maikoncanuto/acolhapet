@@ -1,0 +1,90 @@
+<!--<ion-content>-->
+<!--    <div class="container">-->
+<!--        <div class="header">-->
+<!--            <img src="../../../assets/dog.svg" width="130" height="130"/>-->
+<!--            <h1>-->
+<!--                <span class="title">Acolha</span>Pet-->
+<!--            </h1>-->
+<!--        </div>-->
+
+<!--        <div class="login">-->
+<!--            <ion-button class="btn-facebook" (click)="loginFacebook()">-->
+<!--                <ion-icon slot="start" name="logo-facebook"></ion-icon>-->
+<!--                Entrar com Facebook-->
+<!--            </ion-button>-->
+
+<!--            <ion-button class="btn-google" (click)="loginFacebook()">-->
+<!--                <ion-icon slot="start" name="logo-google"></ion-icon>-->
+<!--                Entrar com Google-->
+<!--            </ion-button>-->
+<!--        </div>-->
+
+<!--        <div class="register">-->
+<!--            <div class="email">-->
+<!--                <ion-icon slot="start" name="mail-outline"></ion-icon>-->
+<!--                Entrar com E-mail-->
+<!--            </div>-->
+
+<!--            <p>Não tem uma conta ? <span>Registrar</span></p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</ion-content>-->
+
+<ion-content>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Acolha<span>Pet</span></h1>
+            <img src="assets/dog.svg" width="36" height="36"/>
+        </div>
+
+
+        <div class="login">
+            <div class="label">
+                <h1 class="login">Entrar</h1>
+                <h1 class="signup">Registrar</h1>
+            </div>
+        </div>
+
+        <div class="login-form">
+
+            <ion-item class="input-email">
+                <ion-input type="email"
+                           placeholder="digite seu email"
+                           maxlength="150"
+                           [formControl]="emailLogin"
+                           autocomplete="false"></ion-input>
+            </ion-item>
+
+            <ion-item class="input-password">
+                <ion-input type="password"
+                           [formControl]="passwordLogin"
+                           placeholder="digite sua senha"
+                           maxlength="16"
+                           minlength="8"
+                           autocomplete="false"></ion-input>
+            </ion-item>
+
+            <div class="container-logar">
+                <p class="esqueceu-senha">Esqueceu a senha?</p>
+
+                <ion-button fill="outline" (click)="loginNormal()" color="light"><span class="btn-entrar">Entrar</span></ion-button>
+            </div>
+
+        </div>
+
+
+        <div class="social">
+            <h1>
+                <span class="title">ou</span>
+                <span class="subtitle"> Junte-se com</span>
+            </h1>
+
+            <div class="actions">
+                <ion-button (click)="loginFacebook()" class="facebook"><ion-icon name="logo-facebook"></ion-icon></ion-button>
+                <ion-button (click)="loginGoogle()" class="google"><ion-icon name="logo-google"></ion-icon></ion-button>
+                <ion-button (click)="loginTwitter()" class="twitter"><ion-icon name="logo-twitter"></ion-icon></ion-button>
+            </div>
+        </div>
+
+    </div>
+</ion-content>
